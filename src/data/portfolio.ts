@@ -4,7 +4,7 @@
 export const profile = {
   name: 'Ivory Huo',
   program: 'Honours Specialization in Computer Science',
-  school: 'Western University',
+  school: 'University of Western Ontario',
   graduation: 'April 2027',
 };
 
@@ -19,7 +19,7 @@ export const links = [
 
 export const welcome = {
   paragraphs: [
-    "Welcome to my city! I'm Ivory, an Honours Specialization Computer Science student at Western University, and I love building things: tools that make people's work easier, apps people enjoy using, and events that bring people together.",
+    "Welcome to my city! I'm Ivory, an Honours Specialization Computer Science student at the University of Western Ontario, and I love building things: tools that make people's work easier, apps people enjoy using, and events that bring people together.",
     'So I built my portfolio the same way, one brick at a time. Walk around, step inside any building, or jump straight to one from the list below.',
   ],
 };
@@ -46,7 +46,7 @@ export const roles: Role[] = [
       'Scoped requirements with 10 users and launched the People Directory Insights Tool (Power Apps and Power Automate) to replace manual reporting, cutting effort by 80%. Shipped 4 feedback-driven versions; it is now used daily.',
       'Prioritized 10+ initiatives across 5+ stakeholder groups, writing user stories and specs in Jira, and delivered 6 projects.',
       "Led major upgrades to the Vendor Opportunity Lifecycle Tool (VOLT), expanding it into the team's first unified view of vendor relationships across 3 systems. Demoed it to drive adoption; the team now relies on it to understand vendor relationships and prep for conferences and events.",
-      "Presented the People Directory Insights Tool to a VP and at TD's intern showcase.",
+      "Presented the People Directory Insights Tool to a Director and at TD's intern showcase.",
       'Coordinated the SSO rollout for a live application, replacing its legacy sign-in and aligning security, infrastructure, compliance and risk teams through privacy review and go-live.',
     ],
     stack: ['Power Apps', 'Power Automate', 'Jira'],
@@ -88,7 +88,7 @@ export const roles: Role[] = [
 export const skills: Array<{ group: string; items: string[] }> = [
   {
     group: 'Technical',
-    items: ['Python', 'Java', 'JavaScript', 'Typescript', 'SQL', 'C/C++', 'HTML/CSS', 'React', 'Node.js', 'PySpark', 'Databricks', 'Docker', 'Github Actions', 'OpenAI API'],
+    items: ['Python', 'Java', 'JavaScript', 'TypeScript', 'SQL', 'C/C++', 'HTML/CSS', 'React', 'Node.js', 'PySpark', 'Databricks', 'Docker', 'GitHub Actions', 'OpenAI API'],
   },
   {
     group: 'Product and data',
@@ -119,7 +119,7 @@ export const dataCentre: {
   /** Unlocked by powering on the rack for `role`; ones without a role are unlocked from the start. */
   achievements: [
     { icon: '🌱', title: 'Always learning', detail: 'Picked up new skills through every opportunity along the way' },
-    { icon: '🎤', title: 'Presented to a VP', detail: "People Directory Insights Tool, plus TD's intern showcase", role: 'td-bsa' },
+    { icon: '🎤', title: 'Presented to a Director', detail: "People Directory Insights Tool, plus TD's intern showcase", role: 'td-bsa' },
     { icon: '🚀', title: 'Shipped v4', detail: '4 feedback-driven versions, now used daily', role: 'td-bsa' },
     { icon: '🔐', title: 'Went live', detail: 'SSO through privacy review and go-live', role: 'td-bsa' },
     { icon: '📦', title: 'Six for six', detail: '6 projects delivered from 10+ initiatives', role: 'td-bsa' },
@@ -159,7 +159,7 @@ export const caseStudies: CaseStudy[] = [
     problem: "Obtaining user details across the company's organizational structure was manual and repetitive, taking up to 3 hours every week.",
     approach: 'Scoped requirements with 10 users, then iterated on their feedback across 4 versions.',
     shipped: 'The People Directory Insights Tool, built with Power Apps and Power Automate to replace the manual process.',
-    result: "Reporting effort dropped by 80% and the team uses it daily. I presented it to a VP and at TD's intern showcase.",
+    result: "Reporting effort dropped by 80% and the team uses it daily. I presented it to a Director and at TD's intern showcase.",
   },
   {
     name: 'Vendor Opportunity Lifecycle Tool (VOLT)',
@@ -602,9 +602,9 @@ export const community: { clubs: CommunityItem[]; activities: CommunityItem[]; s
       role: 'Developer Director',
       when: '2023–24',
       headline: { value: '500+', label: 'kids served' },
-      detail:
-        'Lead backend developer, working through sprints, code reviews, project planning and wireframes. Worked on a platform for GO Hockey, a non-profit serving 500+ kids, to automate the manual work spread across 50+ Google Forms and spreadsheets.',
-      tint: '#5FA8E8',
+        detail:
+        'Led back-end development of a platform for GO Hockey, a non-profit serving 500+ kids, built to replace 50+ Google Forms and spreadsheets. Worked through sprints, code reviews, project planning and wireframes.',
+        tint: '#5FA8E8',
     },
   ],
   activities: [],

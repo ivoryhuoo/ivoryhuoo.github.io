@@ -19,9 +19,18 @@ export function useCanvasTexture(width: number, height: number, draw: Draw): Can
 
   useEffect(() => {
     let alive = true;
-    document.fonts?.ready.then(() => {
-      if (alive) paint(texture, draw);
-    });
+    const fonts = document.fonts;
+    if (!fonts) return;
+    // Ask for the sign font directly: nothing in the CSS uses it, so the
+    // browser won't fetch it on its own before the signs are painted.
+    Promise.all([
+      fonts.load('800 40px "Bricolage Grotesque"'),
+      fonts.load('600 40px "Bricolage Grotesque"'),
+    ])
+      .catch(() => {})
+      .finally(() => {
+        if (alive) paint(texture, draw);
+      });
     return () => {
       alive = false;
     };
