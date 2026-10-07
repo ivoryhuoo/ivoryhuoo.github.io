@@ -10,7 +10,6 @@ import {
   RESUME_FILE,
   roles,
   skills,
-  travel,
 } from '../data/portfolio';
 import { asset } from '../lib/assets';
 import { useWorld } from '../state/useWorld';
@@ -51,9 +50,6 @@ export function QuickView({ forced = false }: { forced?: boolean }) {
           <a className="btn btn-plain" href={asset(RESUME_FILE)} download>
             Download PDF resume
           </a>
-          <button className="btn btn-plain" onClick={() => window.print()}>
-            Print
-          </button>
         </div>
 
         <header className="quick-head">
@@ -62,10 +58,12 @@ export function QuickView({ forced = false }: { forced?: boolean }) {
             {profile.name}
           </h1>
           <p>
-            {profile.program}, {profile.school}. Graduating {profile.graduation}.
+            {profile.program}, {profile.school}
+            <br />
+            Graduating {profile.graduation}
           </p>
-          <ul className="quick-links">
-            {links.map((l) => (
+                    <ul className="quick-links">
+            {links.filter((l) => l.label !== 'Email').map((l) => (
               <li key={l.label}>
                 <a href={l.href} target="_blank" rel="noopener">
                   {l.label}
@@ -181,10 +179,6 @@ export function QuickView({ forced = false }: { forced?: boolean }) {
           </dl>
         </section>
 
-        <section>
-          <h2>Travel</h2>
-          <p>{travel.destinations.map((d) => (d.status ? `${d.name} (${d.status.toLowerCase()})` : d.name)).join(', ')}.</p>
-        </section>
       </div>
     </div>
   );

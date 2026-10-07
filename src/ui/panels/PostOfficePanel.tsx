@@ -12,7 +12,6 @@ const SUBJECT = encodeURIComponent('Hello from your website');
 const MAIL_OPTIONS = [
   { label: 'Gmail', href: `https://mail.google.com/mail/?view=cm&fs=1&to=${ADDRESS}&su=${SUBJECT}` },
   { label: 'Outlook', href: `https://outlook.office.com/mail/deeplink/compose?to=${ADDRESS}&subject=${SUBJECT}` },
-  { label: 'Mail app', href: `mailto:${ADDRESS}?subject=${SUBJECT}` },
 ];
 
 const ENVELOPES = [

@@ -88,7 +88,7 @@ export const roles: Role[] = [
 export const skills: Array<{ group: string; items: string[] }> = [
   {
     group: 'Technical',
-    items: ['Python', 'Java', 'JavaScript', 'SQL', 'C/C++', 'HTML/CSS', 'React', 'Node.js', 'PySpark', 'Databricks', 'Docker', 'OpenAI API'],
+    items: ['Python', 'Java', 'JavaScript', 'Typescript', 'SQL', 'C/C++', 'HTML/CSS', 'React', 'Node.js', 'PySpark', 'Databricks', 'Docker', 'Github Actions', 'OpenAI API'],
   },
   {
     group: 'Product and data',
