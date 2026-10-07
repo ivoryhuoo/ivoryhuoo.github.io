@@ -1,4 +1,4 @@
-# Ivory's World
+# Ivory's City
 
 My portfolio, built as a walkable brick world. Each building is a section of the
 portfolio: walk up to one and step inside.
